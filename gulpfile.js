@@ -76,9 +76,10 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'compile-css', 'minify-js'], function() {
-    gulp.watch('css/*.less', ['compile-css']);
+    gulp.watch('css/less/*.less', ['compile-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
+    gulp.watch('img/*.png', browserSync.reload);
 });
