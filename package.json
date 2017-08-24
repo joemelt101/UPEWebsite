@@ -1,6 +1,6 @@
 {
-  "name": "freelancer",
-  "title": "Freelancer",
+  "name": "mu-upe",
+  "title": "MU-UPE",
   "version": "3.3.7+1",
   "homepage": "http://startbootstrap.com/template-overviews/freelancer",
   "author": "Start Bootstrap",
@@ -24,5 +24,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "connect": "^3.6.3",
+    "serve-static": "^1.12.4"
   }
 }
